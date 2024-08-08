@@ -10,16 +10,14 @@ from detectron2.config import get_cfg
 from detectron2.data.detection_utils import read_image
 from detectron2.utils.logger import setup_logger
 
-
-from grit.config import add_grit_config
-
-from grit.predictor import VisualizationDemo
-
 # Add the path to the CenterNet2 module
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'third_party/CenterNet2/projects/CenterNet2/'))
 
 from centernet.config import add_centernet_config
 
+from grit.config import add_grit_config
+
+from grit.predictor import VisualizationDemo
 # constants
 WINDOW_NAME = "GRiT"
 
