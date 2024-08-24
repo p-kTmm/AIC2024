@@ -26,7 +26,7 @@ def setup_cfg(args):
     cfg = get_cfg()
     # if args.cpu:
     #     cfg.MODEL.DEVICE="cpu"
-    cfg.MODEL.DEVICE="gpu"
+    cfg.MODEL.DEVICE="cuda"
     add_centernet_config(cfg)
     add_grit_config(cfg)
     cfg.merge_from_file(args.config_file)
